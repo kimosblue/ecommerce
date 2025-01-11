@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Team06</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Team06</div>
+            <div class="burger-menu">
+                <div class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="my-orders.html">My Orders</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="favorites.html" class="icon-link">
+                    <span class="icon">❤️</span>
+                    <span class="icon-count">0</span>
+                </a>
+                <a href="cart.html" class="icon-link active">
+                    <span class="icon">🛒</span>
+                    <span class="icon-count">3</span>
+                </a>
+                <a href="profile.html" class="icon-link">
+                    <span class="icon">👤</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart-section">
+            <h1>Shopping Cart</h1>
+            <div class="cart-container">
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <img src="https://via.placeholder.com/100" alt="Product 1">
+                        <div class="item-details">
+                            <h3>Smartphone</h3>
+                            <p class="price">$699.99</p>
+                        </div>
+                        <div class="quantity">
+                            <button class="qty-btn">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="qty-btn">+</button>
+                        </div>
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                    <div class="cart-item">
+                        <img src="https://via.placeholder.com/100" alt="Product 2">
+                        <div class="item-details">
+                            <h3>Headphones</h3>
+                            <p class="price">$149.99</p>
+                        </div>
+                        <div class="quantity">
+                            <button class="qty-btn">-</button>
+                            <input type="number" value="1" min="1">
+                            <button class="qty-btn">+</button>
+                        </div>
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span>$849.98</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Shipping</span>
+                        <span>$10.00</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total</span>
+                        <span>$859.98</span>
+                    </div>
+                    <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Your trusted online shopping destination</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@shopnow.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Team06. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

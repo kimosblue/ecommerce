@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple E-commerce Store</title>
+    <title>Products - Team06</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,12 +18,11 @@
                 </div>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="my-orders.html">My Orders</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="my-orders.html">My Orders</a></li>
             </ul>
             <div class="nav-icons">
                 <a href="favorites.html" class="icon-link">
@@ -42,36 +41,50 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Welcome to Team06</h1>
-            <p>Discover amazing products at great prices</p>
-        </section>
-
-        <section class="products">
-            <h2>Featured Products</h2>
+        <section class="products-section">
+            <h1>Our Products</h1>
+            <div class="filters">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home">Home & Living</option>
+                </select>
+                <select id="price-filter">
+                    <option value="">Price Range</option>
+                    <option value="0-50">$0 - $50</option>
+                    <option value="51-100">$51 - $100</option>
+                    <option value="101-200">$101 - $200</option>
+                    <option value="201+">$201+</option>
+                </select>
+            </div>
             <div class="product-grid">
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/200" alt="Product 1">
-                    <h3>Stylish Watch</h3>
-                    <p class="price">$99.99</p>
-                    <button class="btn">Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/200" alt="Product 2">
-                    <h3>Leather Bag</h3>
+                    <img src="images/Wireless_Headphones.jpg" alt="Product 1 - Wireless Headphones">
+                    <h3>Wireless Headphones</h3>
+                    <p class="description">Premium sound quality with noise cancellation</p>
                     <p class="price">$149.99</p>
                     <button class="btn">Add to Cart</button>
                 </div>
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/200" alt="Product 3">
-                    <h3>Sunglasses</h3>
-                    <p class="price">$79.99</p>
+                    <img src="images/revolution-6-running-shoes-FgYC3h.png" alt="Product 2 - Running Shoes">
+                    <h3>Running Shoes</h3>
+                    <p class="description">Comfortable and stylish sports shoes</p>
+                    <p class="price">$89.99</p>
                     <button class="btn">Add to Cart</button>
                 </div>
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/200" alt="Product 4">
-                    <h3>Smart Speaker</h3>
+                    <img src="images/1633680572_IMG_1618142.jpg" alt="Product 3 - Smart Watch">
+                    <h3>Smart Watch</h3>
+                    <p class="description">Track your fitness and stay connected</p>
                     <p class="price">$199.99</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/pro-x-superlight-black-gallery-1.png" alt="Product 4 - Gaming Mouse">
+                    <h3>Gaming Mouse</h3>
+                    <p class="description">High precision gaming mouse</p>
+                    <p class="price">$59.99</p>
                     <button class="btn">Add to Cart</button>
                 </div>
             </div>
